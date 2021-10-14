@@ -43,13 +43,13 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="table-responsive">
-                                                            <table class="table">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th style="color: rgb(255,255,255);">Column 1</th>
-                                                                        <th style="color: rgb(255,255,255);">Column 2</th>
-                                                                    </tr>
-                                                                </thead>
+                                                            <table class="table" border="1">
+<!--                                                                <thead>-->
+<!--                                                                    <tr>-->
+<!--                                                                        <th style="color: rgb(255,255,255);"></th>-->
+<!--                                                                        <th style="color: rgb(255,255,255);">Column 2</th>-->
+<!--                                                                    </tr>-->
+<!--                                                                </thead>-->
                                                                 <tbody>
                                                                     <tr>
                                                                          {% for p in pd %}
@@ -93,6 +93,10 @@
                                                                         <td>{{p.email}}</td>
                                                                     </tr>
                                                                     <tr>
+                                                                        <td>Sai Connect No :</td>
+                                                                        <td>{{p.sai_connect_number}}</td>
+                                                                    </tr>
+                                                                    <tr>
                                                                         <td>Samithi :</td>
                                                                         <td>{{p.samithi}}</td>
                                                                     </tr>
@@ -109,7 +113,7 @@
                                                                         <td>{{p.state}}</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td><strong>Chief Complaints</strong><br></td>
+                                                                        <th>Chief Complaints</th</th>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>Gradual Decrease in Vision :<br></td>
