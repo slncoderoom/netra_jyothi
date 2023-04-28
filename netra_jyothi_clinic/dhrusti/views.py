@@ -38,6 +38,8 @@ def patient_info(request):
             gradual_decrease_in_vision = request.POST['gradual_decrease_in_vision']
         else:
             gradual_decrease_in_vision = ''
+
+            
         gradual_decrease_in_vision1 = request.POST.get('gradual_decrease_in_vision1', None)
 
         if 'gradual_decrease_in_vision1' in request.POST:
@@ -233,5 +235,3 @@ def patient_info(request):
 
 def patient_info_form(request):
     return render(request, 'dhrusti/user/patient_info.html')
-
-
